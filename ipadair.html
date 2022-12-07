@@ -1,0 +1,249 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ipadair.css">
+</head>
+<body>
+<div class="menu1">
+<ul>
+<li> <a href="D:\NAMAN\html assignment\naman\homepage.html"> <img src="logo.jpg" class="logo1"></a></li>
+<li> <a href="D:\NAMAN\html assignment\nikunj\homepage.html" class="one">iPad</a> </li>
+<li> <a href="D:\NAMAN\html assignment\nikhil\iphone.html" class="one">iPhone</a> </li>
+<li> <a href="D:\NAMAN\html assignment\jahnvi\watch\homepage.html" class="one">Watch</a> </li>
+<li> <a href="D:\NAMAN\html assignment\karan\Assignment\mac.html" class="one">Mac</a> </li>
+<li> <a href="D:\NAMAN\html assignment\naman\accessories.html" class="one">Accessories</a> </li>
+</ul>
+</div>
+<div class="title2" id="mytitle2">
+<span class="title3">iPad Air</span>
+</div>
+<hr>
+<div class="content1">
+<br><br><br>
+<div class="all-screen">
+<center>
+An all-screen design
+<br>
+<img class="screen" src="ipadair2.png"/>
+<br>
+with a stunning 10.9-inch 
+<br>
+Liquid Retina display
+</center>
+</div>
+<br><br>
+<div class="Touch">
+<center>
+<img class="Fast" src="TouchId.jpg"/>
+<br>
+featuring fast, easy,
+<br>
+and secure Touch ID
+<br>
+</center>
+</div>
+<br>
+<div class="powerful">
+<span class="powerful1">
+Powerful. Colorful.
+</span>
+<br>
+<span class="powerful2">
+Wonderful.
+</span>
+<br>
+iPad Air does more than a computer in simpler, more magical
+<br>
+ways. And now with more features and capabilities, it’s more 
+<br>
+versatile than ever.
+</div>
+<br><br>
+
+<!--Slider-->
+<div class="slideshow-container">
+
+<div class="mySlides">
+<img src="green.jpg" class="slider">
+</div>
+
+<div class="mySlides">
+<img src="rose.jpg" class="slider">
+</div>
+
+<div class="mySlides">
+<img src="grey.jpg" class="slider">
+</div>
+
+<div class="mySlides">
+<img src="silver.jfif" class="slider">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<br><br><br>
+
+<div class="creative">
+<span class="creative1">
+Your creative 
+</span>
+<br>
+<span class="creative2">
+studio on the go.
+</span>
+<br>
+With A14 Bionic, you have the power to bring your ideas to life. Shoot a
+<br>
+4K video, then edit it right on iPad Air. Use the second‑generation 
+<br>
+Apple Pencil to paint and illustrate with dynamic brushes and subtle 
+<br>
+shading.1 And with the enhanced graphics and machine learning 
+<br>
+performance of A14 Bionic, you can unlock new creative possibilities
+<br>
+with photo editing, music creation, and more.
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img class="creative3" src="ipadair4.jpeg"/>
+<img class="creative4" src="ipadair3.jpg"/>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class ="hardwork6">
+<div class="hardwork4">
+<span class="hardwork1">
+Make working 
+</span>
+<br>
+<span class="hardwork1">
+hard feel like 
+</span>
+<br>
+<span class="hardwork1">
+hardly working.
+</span>
+</div>
+<img class="hardwork5" src="ipadair8.jpg"/>
+</div>
+<div class="hardwork">
+<br>
+With the incredible versatility of
+<br>
+iPad Air, you can work any way you
+<br>
+want. Use the Smart Keyboard Folio, or
+<br>
+attach the Magic Keyboard for
+<br>
+responsive typing and a built‑in
+<br>
+trackpad.1 It’s perfect for the things 
+<br>
+you need to do, like sending an email. 
+<br>
+Or the things you want to do, like 
+<br>
+writing a short story. And with all‑day
+<br>
+battery life,2 iPad Air is ready to work 
+<br>
+for as long as you need it.
+</div>
+<br>
+<br>
+<br>
+<center>
+<image src="ipadair7.jpg" id="i" onmouseover="mouse1(this)" onmouseout="mouse2(this)"></image>
+</center>
+<div class="power">
+<span class="power1">
+Power up your
+</span>
+<br>
+<span class="power2">
+leisure time.
+</span>
+<br>
+The incredible graphics of A14 Bionic and the stunning
+<br>
+iPad Air display make all your entertainment completely 
+<br>
+captivating. Watch movies on the gorgeous Liquid Retina 
+<br>
+display with P3 wide color and enjoy an immersive audio 
+<br>
+experience with high‑quality landscape stereo speakers.
+<br>
+Or play games with console‑level graphics, and even 
+<br>
+connect a controller.
+</div>
+<br>
+<br><br>
+<hr>
+<br>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n)
+{
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex);
+}
+
+function showSlides(n)
+{
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+window.onscroll = function() {myFunction()};
+
+var title2 = document.getElementById("mytitle2");
+var sticky = title2.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    title2.classList.add("sticky");
+  } else {
+   title2.classList.remove("sticky");
+  }
+}
+function mouse1(elem)
+{
+elem.src="ipadair6.jpg";
+}
+function mouse2(elem)
+{
+elem.src="ipadair7.jpg"
+}
+
+</script>
+</body>
+</html>
